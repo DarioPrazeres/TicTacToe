@@ -1,0 +1,82 @@
+.body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.h1{
+    text-align: center;
+}
+.container_1{
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+  
+    margin-top: 50px;
+}
+.item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    border: solid 1px black;
+}
+.show-winner{
+    position: absolute;
+    top: 0px;
+    
+    background-color: black;
+    opacity: 0.9;
+
+    width: 700px;
+    height: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    color: wheat;
+    font-size: 30px;
+
+
+    display: none;
+}
+.btn{
+    width: 150px;
+    font-size: 25px;
+}
+.item:first-child,
+.item:nth-child(2),
+.item:nth-child(3){
+    border-top: none;
+}
+.item:nth-child(3n+1){
+    border-left: none;
+}
+.item:nth-child(3n+3){
+    border-right: none;
+}
+.item:last-child,
+.item:nth-child(8),
+.item:nth-child(7){
+    border-bottom: none;
+}
+
+footer{
+    text-align: center;
+    font-size: 25px;
+}
+@media only screen and (max-width: 768px){
+    .show-winner{
+        width: 100%;
+    }
+    
+  
+}
+@media only screen and (min-width: 768px){
+    .show-winner{
+        width: 100%;
+    }
+    
+  
+}
